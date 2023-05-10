@@ -1,13 +1,15 @@
 Solution 1 :-
-var isAnagram = function(s, t) {
+
+    var isAnagram = function(s, t) {
     s = s.split("").sort().join("");
     t = t.split("").sort().join("");
 
     return s === t;
-};
+    };
 
 Solution 2 (Efficient) :-
-var isAnagram = function(s, t) {
+
+    var isAnagram = function(s, t) {
     if(s.length !== t.length) return false;
 
     let obj1={};
@@ -23,4 +25,4 @@ var isAnagram = function(s, t) {
     }
 
     return true;
-};
+    };
