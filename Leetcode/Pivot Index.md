@@ -1,4 +1,4 @@
-Solution 1 (Iterative) :-
+Solution :-
 
     let leftSum = 0, rightSum = 0, sum = 0;
 
