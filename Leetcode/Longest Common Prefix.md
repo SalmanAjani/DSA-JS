@@ -27,7 +27,7 @@ Solution :-
     Space Complexity - O(1)
 
     Explanation -
-    First we check if input string is empty. If it is, we straight away return empty string as result.
+    First we check if input is empty. If it is, we straight away return empty string as result.
 
     If it is not empty, we start by looping through the first string. The outer loop will iterate through the first string and the inner loop will iterate through the other strings. This is basically a way of checking if first string is a substring of other strings.
 
