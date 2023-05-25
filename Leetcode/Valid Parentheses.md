@@ -18,5 +18,15 @@ Solution (Using Stack) :-
             }
         }
         // if the stack is empty, all opening brackets have been matched with their corresponding closing brackets
-        return !stack.length;
+        return stack.length === 0;
     };
+
+    Time Complexity - O(N)
+    Space Complexity - O(N)
+
+    Explanation -
+    The approach to solving this problem is pretty straightforward. Initially take an empty stack and everytime we encounter an open ended parentheses, we push the closed ended version of that parentheses into the stack.
+
+    At the last step of the loop we will compare the value at the top of the stack with given string. If we find a pair of parentheses they are popped off from the stack. This will keep on going till the loop breaks.
+
+    By the end, if there are no more elements left in the stack, that means every open ended bracket has found their corresponding closed ended bracket, so we simply return true.
